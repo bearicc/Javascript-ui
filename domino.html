@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title></title>
+    <link rel="stylesheet" href="domino.css" type="text/css" media="all" />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        var degree = 0;
+        
+        function rotate_left() {
+            degree  = (degree-90) % 360;
+            $("#middle").css("transform", "rotate("+degree+"deg)");
+        }
+        
+        function rotate_right() {
+            degree  = (degree+90) % 360;
+            $("#middle").css("transform", "rotate("+degree+"deg)");
+        }
+        
+        function generate() {
+            var n = 0;
+            reset();
+            for(var i = 1; i <= 6; i++)
+            {
+                n = Math.floor(Math.random()*10) % 2;
+                console.log(" "+n);
+                if(n > 0)
+                {
+                    $("#up"+i).css("background-color","white");
+                }
+            }
+        
+            for(var i = 1; i <= 6; i++)
+            {
+                n = Math.floor(Math.random()*10) % 2;
+                console.log(" "+n);
+                if(n > 0)
+                {
+                    $("#down"+i).css("background-color","white");
+                }
+            }
+        }
+        
+        function reset()
+        {
+            for(var i = 1; i <= 6; i++)
+            {
+                $("#up"+i).css("background-color","black");
+                $("#down"+i).css("background-color","black");
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div id="domino">
+    <div id="left"><button type="button" onclick="rotate_left()">ROTATE LEFT</button></div>
+    <div id="middle">
+        <div id="up">
+            <div id="up1"></div>
+            <div id="up2"></div>
+            <div id="up3"></div>
+            <div id="up4"></div>
+            <div id="up5"></div>
+            <div id="up6"></div>
+        </div>
+        <div id="down">
+            <div id="down1"></div>
+            <div id="down2"></div>
+            <div id="down3"></div>
+            <div id="down4"></div>
+            <div id="down5"></div>
+            <div id="down6"></div>
+        </div>
+    </div>
+    <div id="right"><button type="button" onclick="rotate_right()">ROTATE RIGHT</button></div>
+    <div id="bottom"><button type="button" onclick="generate()">GENERATE</button></div>
+</div>
+
+</body>
+</html>

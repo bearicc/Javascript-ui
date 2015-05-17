@@ -1,0 +1,180 @@
+button {
+    font-weight: normal;
+    padding: 5px;
+    border: solid blue 1px;
+    margin: 5px 10px;
+    width: 120px;
+    border-radius: 3px;
+}
+
+#domino {
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    width: 600px;
+}
+
+#left {
+    position: relative;
+    float:left;
+    height: 402px;
+    line-height: 402px;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+    width: 150px;
+}
+
+#right {
+    position: relative;
+    float:left;
+    height: 402px;
+    width: 150px;
+    line-height: 402px;
+    text-align: center;
+    padding: 15px;
+    z-index: 1000;
+}
+
+#middle {
+    float:left;
+    background-color: black;
+    height: 402px;
+    width: 210px;
+    padding: 15px;
+    border: 0;
+    z-index: -1;
+}
+#bottom {
+    clear: both;
+    padding-top: 15px;
+    z-index: 1000;
+}
+
+#up {
+    position: relative;
+    margin: 0;
+    border-bottom: solid 2px white;
+    padding: 0;
+    width: 210px;
+    height: 200px;
+}
+
+#up #up1 {
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#up #up2 {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#up #up3 {
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#up #up4 {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#up #up5 {
+    position: absolute;
+    bottom: 15px;
+    left: 75px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#up #up6 {
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 210px;
+    height: 200px;
+}
+
+#down #down1 {
+    position: absolute;
+    top:15px;
+    left: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down #down2 {
+    position: absolute;
+    top:15px;
+    left: 75px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down #down3 {
+    position: absolute;
+    top:15px;
+    right: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down #down4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down #down5 {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
+
+#down #down6 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+}
